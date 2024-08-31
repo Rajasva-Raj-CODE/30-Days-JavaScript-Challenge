@@ -108,3 +108,4 @@ console.log(negate);
 let varname = -33;
 let check = varname > 0 ? "positive" : "negative";
 console.log(check);
+
