@@ -29,8 +29,23 @@ const doublearr = arr1.map((ele) => ele * 2);
 console.log(doublearr);
 
 //! Task-8 : Use the `filter` method to create a new array with only even numbers and log the new array.
+let filterarr = [1000,4000,5000,6000]
+let finalvalue = filterarr.filter((x)=>{return x<=5000})
+console.log(finalvalue);
+
 //! Task-9 : Use the `reduce` method to calculate the sum of all numbers in the array and log the result.
-//! Task-10 : Use a `for` loop to itereate over the array and log each element to the console.
+let arrReduce =[60,70,80,90]
+let sum = arrReduce.reduce((acc,cv)=>{
+    return acc+cv
+},0)
+console.log(sum);
+
+//! Task-10 : Use a `for` loop to iterate over the array and log each element to the console.
+let forloop = [20,40,60,70]
+for(i=0;i<forloop.length;i++){
+    console.log(forloop[i]);
+}
+
 //! Task-11 : Use the `forEach` method to iterate over the array and log each element to the console.
 let foreachArr = [40, 20, 45, 10];
 foreachArr.forEach((elem) => console.log(elem));
