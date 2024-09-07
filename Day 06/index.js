@@ -50,4 +50,14 @@ for(i=0;i<forloop.length;i++){
 let foreachArr = [40, 20, 45, 10];
 foreachArr.forEach((elem) => console.log(elem));
 //! Task-12 : Create a two-dimensional array (matrix) and log the entire array to the console.
+ let multiArray = [ 
+    [10,20,30],
+    [40,50,60],
+    [70,80,90]
+]
+ console.log(multiArray);
+
+ 
 //! Task-13 : Access and log a specific element from the two-dimensional array.
+ console.log(multiArray[0][2]);
+ 
