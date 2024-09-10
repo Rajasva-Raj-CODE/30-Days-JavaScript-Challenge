@@ -3,8 +3,8 @@ let books ={
     title:"james",
     author:"jhon wick",
     year:"1987",
-    getmethod:function(year){
-        return `Title:${this.title} Author:${this.author}`
+    getmethod:function(){
+        return `Title:${this.title} Author:${this.author} year:${this.year}`
     }
 }
 console.log(books);
@@ -51,5 +51,15 @@ library.books.forEach((x)=>{console.log(` ${x.title} ${x.author} ${x.year}`);
 })
 
 //! Task-7 : Add a method to the book object that uses the `this` keyword to return a string with the book's title and year, and log the result of calling this method.
+// console.log(books.getmethod);
+
+
 //! Task-8 : Use a for...in loop to iterate over the properties of the book object and log each property and its value. 
+
 //! Task-9 : Use Object.keys and Object.values methods to log all the keys and values of the book object.
+let objkey = Object.keys(books)
+let objValue = Object.values(books)
+
+console.log(objkey);
+console.log(objValue);
+
