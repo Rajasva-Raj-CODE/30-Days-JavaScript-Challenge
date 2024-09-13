@@ -17,23 +17,32 @@ li.textContent = "Wednesday";
 document.querySelector("ul").appendChild(li);
 
 //! Task-5 : Select an HTML element and remove it form the DOM.
-var h2= document.createElement("h2")
-h2.textContent ="hey there..."
-document.body.appendChild(h2)
-document.body.removeChild(h2)
+var h2 = document.createElement("h2");
+h2.textContent = "hey there...";
+document.body.appendChild(h2);
+document.body.removeChild(h2);
 
 //! Task-6 : Remove the last child of a specific HTML element.
 function removeLastItem() {
-    const ul = document.getElementById("myList");
-    const lastItem = ul.lastElementChild;  // Get the last element
-    if (lastItem) {
-      ul.removeChild(lastItem);  // Remove the last element
-    }
+  const ul = document.getElementById("myList");
+  const lastItem = ul.lastElementChild; // Get the last element
+  if (lastItem) {
+    ul.removeChild(lastItem); // Remove the last element
   }
-  removeLastItem()
+}
+removeLastItem();
 
 //! Task-7 : Select an HTML element and change one of its attributes (e.g., `src` of an `img` tag).
 
 //! Task-8 : Add and remove a CSS class to/from an HTML element.
 //! Task-9 : Add a click event listener to a button that changes the text content of a paragraph.
+const button = document.getElementById("myButton");
+button.addEventListener("click", function () {
+  const paragraph = document.getElementById("myParagraph");
+  paragraph.textContent = "the text has been changed";
+});
 //! Task-10 : Add a mouseover event listener to an element that changes its border color.
+// using changeColor created in task2
+changeColor.addEventListener("mouseover",function(){
+ changeColor.style.border = "5px solid green"
+ })
